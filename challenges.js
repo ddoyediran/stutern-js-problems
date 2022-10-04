@@ -176,4 +176,10 @@ function printGrade(marks){
 }
 
 
+function isLandscape(width, height){
+    return (width > height) ? true : false;
+}
+isLandscape(60, 30) // true
+
+
 
