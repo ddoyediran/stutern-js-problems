@@ -18,3 +18,19 @@ function list(){
 
 // list()
 // console.log(finalList) // print [{ name: 'Peter', gender: 'male', age: 24 }, { name: 'Tobi', gender: 'male', age: 25 }, { name: 'Jane', gender: 'female', age: 25 }, { name: 'Vicky', gender: 'female', age: 40 }]
+
+
+// Function sum multiples of 3 and 5
+function sumMultiple(num){
+  let sum = 0;
+  for(let i = 0; i <= num; i++){
+    if(i % 3 === 0 || i % 5 === 0){
+      sum = sum + i;
+    }
+  } 
+  
+  return sum;
+}
+
+
+console.log(sumMultiple(10)) // print 33
