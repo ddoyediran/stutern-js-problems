@@ -133,3 +133,47 @@ function primeNumber(num){
 }
 
 primeNumber(10)
+
+
+
+// Rapheal ASSignment
+function printGrade(marks){
+  // let grade; 
+
+	if(marks > 90){
+    return "AA";
+  }
+  
+  if(marks > 80 && marks <= 90){
+    return "AB";
+  }
+  
+  if(marks > 70 && marks <= 80){
+    return "BB";
+  }
+  
+  if(marks > 60 && marks <= 70){
+    return "BC";
+  }
+  
+  if(marks > 50 && marks <= 60){
+    return "CC";
+  }
+  
+  if(marks > 40 && marks <= 50){
+    return "CD";
+  }
+  
+  if(marks > 30 && marks <= 40){
+    return "DD";
+  }
+  
+  //if(marks <= 30){
+  //  return "FF";
+  //}
+  
+  return "FF"
+}
+
+
+
