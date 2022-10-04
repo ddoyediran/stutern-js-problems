@@ -34,3 +34,102 @@ function sumMultiple(num){
 
 
 console.log(sumMultiple(10)) // print 33
+
+
+
+// Shows if a number is an even or odd
+function showNumbers(limit){
+  
+  for(let i = 0; i < limit; i++){
+    
+    if(i === 0){
+      console.log(i, "EVEN")
+    }
+    
+    else if((i) % 2 === 0){
+      console.log(i, "EVEN")
+    }
+    
+    else{
+      console.log(i, "ODD")
+    }
+  }
+  
+  return;
+}
+
+// showNumbers(6)
+
+function showTruthy(anArr){
+  let countTrue = 0;
+  let countFalse = 0;
+  
+  for(let i = 0; i < anArr.length; i++){
+    if(anArr[i]){
+      countTrue = countTrue + 1;
+    }
+    
+    else {
+      countFalse = countFalse + 1;
+    }
+  }
+  
+  console.log("countTruthy", countTrue)
+  console.log("countFalse", countFalse)
+  //return countFalse;
+}
+
+
+
+// showTruthy([1, 2, 3, ""])
+
+
+function showProperties(anObj){
+  
+  // loop thru the object
+  for(let key in anObj){
+    // display all properties that are of type string
+    if(typeof(anObj[key]) === 'string'){
+      console.log(anObj[key])
+    }
+  }
+  	
+  
+}
+
+
+let objectMovies ={
+  title: "a",
+  yearRelease: 2018,
+  director: "b",
+  rating: 4
+}
+
+showProperties(objectMovies) // "a" and "b"
+
+function primeNumber(num){
+  // iterate through the number 
+  let result = []
+  
+  let i = 0;
+  
+  while(i < num){
+    // check if i === 2: then push i to the array
+    if(i === 2){
+      result.push(i)
+    }
+    
+    // if i mod 2 !== 0:
+    if(i % 2 !== 0){
+    	result.push(i)
+  		// add i to the array  
+    }
+  	
+    
+    i++
+  }
+  	
+  console.log(result)
+}
+
+primeNumber(10)
